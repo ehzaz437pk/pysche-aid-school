@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Statistics - BlueLeaf School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tree-fill"></i>
+                <span>BlueLeaf School</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fees.html">Fees</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="enrollment.html">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Enrollment Statistics</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Student enrollment data and growth trends</p>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Statistics</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Overall Statistics -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Overview</span>
+                <h2 class="section-title">Overall Statistics</h2>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <i class="bi bi-calendar-check text-primary" style="font-size: 2.5rem;"></i>
+                            <h3 class="mt-3 mb-1">Last Year</h3>
+                            <p class="display-5 fw-bold text-primary mb-0">450</p>
+                            <p class="text-muted">Students (2023-24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <i class="bi bi-people-fill text-success" style="font-size: 2.5rem;"></i>
+                            <h3 class="mt-3 mb-1">Current Year</h3>
+                            <p class="display-5 fw-bold text-success mb-0">520</p>
+                            <p class="text-muted">Students (2024-25)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <i class="bi bi-graph-up-arrow text-warning" style="font-size: 2.5rem;"></i>
+                            <h3 class="mt-3 mb-1">Growth</h3>
+                            <p class="display-5 fw-bold text-warning mb-0">+70</p>
+                            <p class="text-muted">New Admissions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <i class="bi bi-percent text-info" style="font-size: 2.5rem;"></i>
+                            <h3 class="mt-3 mb-1">Growth Rate</h3>
+                            <p class="display-5 fw-bold text-info mb-0">15.6%</p>
+                            <p class="text-muted">Year-over-Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Year-wise Growth -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Growth Trend</span>
+                <h2 class="section-title">Year-wise Student Growth</h2>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="growth-bars">
+                                <div class="growth-item mb-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">2020-21</span>
+                                        <span class="fw-bold">350 Students</span>
+                                    </div>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar bg-primary" style="width: 67%;">350</div>
+                                    </div>
+                                </div>
+                                <div class="growth-item mb-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">2021-22</span>
+                                        <span class="fw-bold">380 Students</span>
+                                    </div>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar bg-primary" style="width: 73%;">380</div>
+                                    </div>
+                                </div>
+                                <div class="growth-item mb-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">2022-23</span>
+                                        <span class="fw-bold">420 Students</span>
+                                    </div>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar bg-primary" style="width: 81%;">420</div>
+                                    </div>
+                                </div>
+                                <div class="growth-item mb-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">2023-24</span>
+                                        <span class="fw-bold">450 Students</span>
+                                    </div>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar bg-primary" style="width: 87%;">450</div>
+                                    </div>
+                                </div>
+                                <div class="growth-item">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="fw-semibold">2024-25</span>
+                                        <span class="fw-bold text-success">520 Students</span>
+                                    </div>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar bg-success" style="width: 100%;">520</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class-wise Distribution -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Distribution</span>
+                <h2 class="section-title">Class-wise Student Count</h2>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th class="text-center">Boys</th>
+                                            <th class="text-center">Girls</th>
+                                            <th class="text-center">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>PlayGroup</td>
+                                            <td class="text-center">12</td>
+                                            <td class="text-center">10</td>
+                                            <td class="text-center fw-bold">22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nursery</td>
+                                            <td class="text-center">15</td>
+                                            <td class="text-center">13</td>
+                                            <td class="text-center fw-bold">28</td>
+                                        </tr>
+                                        <tr>
+                                            <td>KG</td>
+                                            <td class="text-center">20</td>
+                                            <td class="text-center">18</td>
+                                            <td class="text-center fw-bold">38</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 1</td>
+                                            <td class="text-center">22</td>
+                                            <td class="text-center">20</td>
+                                            <td class="text-center fw-bold">42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 2</td>
+                                            <td class="text-center">24</td>
+                                            <td class="text-center">22</td>
+                                            <td class="text-center fw-bold">46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 3</td>
+                                            <td class="text-center">25</td>
+                                            <td class="text-center">23</td>
+                                            <td class="text-center fw-bold">48</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 4</td>
+                                            <td class="text-center">26</td>
+                                            <td class="text-center">24</td>
+                                            <td class="text-center fw-bold">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 5</td>
+                                            <td class="text-center">28</td>
+                                            <td class="text-center">26</td>
+                                            <td class="text-center fw-bold">54</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 6</td>
+                                            <td class="text-center">30</td>
+                                            <td class="text-center">28</td>
+                                            <td class="text-center fw-bold">58</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 7</td>
+                                            <td class="text-center">28</td>
+                                            <td class="text-center">26</td>
+                                            <td class="text-center fw-bold">54</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 8</td>
+                                            <td class="text-center">26</td>
+                                            <td class="text-center">24</td>
+                                            <td class="text-center fw-bold">50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 9</td>
+                                            <td class="text-center">24</td>
+                                            <td class="text-center">22</td>
+                                            <td class="text-center fw-bold">46</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Class 10</td>
+                                            <td class="text-center">20</td>
+                                            <td class="text-center">14</td>
+                                            <td class="text-center fw-bold">34</td>
+                                        </tr>
+                                        <tr class="table-success fw-bold">
+                                            <td>TOTAL</td>
+                                            <td class="text-center">300</td>
+                                            <td class="text-center">220</td>
+                                            <td class="text-center">520</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gender Distribution -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Demographics</span>
+                <h2 class="section-title">Gender Distribution</h2>
+            </div>
+
+            <div class="row g-4 mt-4 justify-content-center">
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="gender-icon mb-3">
+                                <i class="bi bi-gender-male text-primary" style="font-size: 4rem;"></i>
+                            </div>
+                            <h3>Boys</h3>
+                            <p class="display-4 fw-bold text-primary">58%</p>
+                            <p class="text-muted mb-0">300 Students</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="gender-icon mb-3">
+                                <i class="bi bi-gender-female text-danger" style="font-size: 4rem;"></i>
+                            </div>
+                            <h3>Girls</h3>
+                            <p class="display-4 fw-bold text-danger">42%</p>
+                            <p class="text-muted mb-0">220 Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Breakdown -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">This Year</span>
+                <h2 class="section-title">New Admissions Breakdown</h2>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 text-center border-0 shadow-sm bg-primary">
+                        <div class="card-body p-4">
+                            <i class="bi bi-person-plus-fill text-white" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3 text-white">New Students</h4>
+                            <p class="display-4 fw-bold mb-0 text-white">70</p>
+                            <p class="mb-0 text-white opacity-75">Fresh enrollments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-center border-0 shadow-sm bg-success">
+                        <div class="card-body p-4">
+                            <i class="bi bi-arrow-left-right text-white" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3 text-white">Transfers</h4>
+                            <p class="display-4 fw-bold mb-0 text-white">15</p>
+                            <p class="mb-0 text-white opacity-75">From other schools</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-center border-0 shadow-sm" style="background-color: #17a2b8;">
+                        <div class="card-body p-4">
+                            <i class="bi bi-arrow-repeat text-white" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3 text-white">Continuing</h4>
+                            <p class="display-4 fw-bold mb-0 text-white">435</p>
+                            <p class="mb-0 text-white opacity-75">Re-enrolled students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Want to Be Part of Our Growing Family?</h2>
+                <p>Join BlueLeaf School and be part of our success story</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-light btn-lg">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <i class="bi bi-tree-fill"></i>
+                                <span>BlueLeaf School</span>
+                            </div>
+                            <p>Nurturing Minds, Shaping Futures. We are committed to providing quality education and holistic development for every student.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="classes.html">Classes</a></li>
+                                <li><a href="fees.html">Fee Structure</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Useful Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="admissions.html">Admissions</a></li>
+                                <li><a href="teachers.html">Our Teachers</a></li>
+                                <li><a href="enrollment.html">Statistics</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Info</h4>
+                            <ul class="footer-contact">
+                                <li><i class="bi bi-geo-alt-fill"></i><span>123 Education Street, Knowledge City, Pakistan</span></li>
+                                <li><i class="bi bi-telephone-fill"></i><span>+92 300 1234567</span></li>
+                                <li><i class="bi bi-envelope-fill"></i><span>info@blueleafschool.edu.pk</span></li>
+                                <li><i class="bi bi-clock-fill"></i><span>Mon - Sat: 8:00 AM - 3:00 PM</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 BlueLeaf School. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Designed with <i class="bi bi-heart-fill text-danger"></i> for Education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

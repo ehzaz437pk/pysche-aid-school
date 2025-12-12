@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes & Timetable - BlueLeaf School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tree-fill"></i>
+                <span>BlueLeaf School</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fees.html">Fees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enrollment.html">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Classes & Timetable</h1>
+            <p data-aos="fade-up" data-aos-delay="100">We offer classes from PlayGroup to Class 10 with comprehensive curriculum</p>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Classes</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Classes Overview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Our Classes</span>
+                <h2 class="section-title">Comprehensive Education for All Ages</h2>
+                <p class="mt-3">BlueLeaf School provides education from early childhood through secondary level</p>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-emoji-smile text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>PlayGroup</h5>
+                            <p class="small text-muted mb-0">Ages 2.5 - 3.5 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="50">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-emoji-heart-eyes text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>Nursery</h5>
+                            <p class="small text-muted mb-0">Ages 3.5 - 4.5 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-star text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>KG</h5>
+                            <p class="small text-muted mb-0">Ages 4.5 - 5.5 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-book text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>Class 1-2</h5>
+                            <p class="small text-muted mb-0">Primary Level</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-journal-text text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>Class 3-5</h5>
+                            <p class="small text-muted mb-0">Elementary Level</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="250">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-journal-bookmark text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>Class 6-8</h5>
+                            <p class="small text-muted mb-0">Middle School</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="class-icon mb-3">
+                                <i class="bi bi-mortarboard text-primary" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5>Class 9-10</h5>
+                            <p class="small text-muted mb-0">Secondary Level</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Timetable -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Schedule</span>
+                <h2 class="section-title">Sample Timetable - Class 5</h2>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white p-4">
+                            <h4 class="mb-1"><i class="bi bi-calendar-week me-2"></i>Class 5 - Weekly Timetable</h4>
+                            <p class="mb-0 opacity-75">Class Teacher: Mr. Michael Brown</p>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-bordered mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th style="width: 15%;">Time</th>
+                                            <th>Monday</th>
+                                            <th>Tuesday</th>
+                                            <th>Wednesday</th>
+                                            <th>Thursday</th>
+                                            <th>Friday</th>
+                                            <th>Saturday</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>8:00 - 8:45</strong></td>
+                                            <td>English</td>
+                                            <td>Mathematics</td>
+                                            <td>English</td>
+                                            <td>Mathematics</td>
+                                            <td>English</td>
+                                            <td>Mathematics</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>8:45 - 9:30</strong></td>
+                                            <td>Mathematics</td>
+                                            <td>Science</td>
+                                            <td>Mathematics</td>
+                                            <td>Science</td>
+                                            <td>Mathematics</td>
+                                            <td>Science</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>9:30 - 10:15</strong></td>
+                                            <td>Science</td>
+                                            <td>English</td>
+                                            <td>Science</td>
+                                            <td>English</td>
+                                            <td>Science</td>
+                                            <td>English</td>
+                                        </tr>
+                                        <tr class="table-warning">
+                                            <td><strong>10:15 - 10:45</strong></td>
+                                            <td colspan="6" class="text-center"><i class="bi bi-cup-hot me-2"></i><strong>Break Time</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>10:45 - 11:30</strong></td>
+                                            <td>Urdu</td>
+                                            <td>Social Studies</td>
+                                            <td>Urdu</td>
+                                            <td>Social Studies</td>
+                                            <td>Urdu</td>
+                                            <td>Computer</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>11:30 - 12:15</strong></td>
+                                            <td>Social Studies</td>
+                                            <td>Islamiat</td>
+                                            <td>Social Studies</td>
+                                            <td>Islamiat</td>
+                                            <td>Social Studies</td>
+                                            <td>Art</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>12:15 - 1:00</strong></td>
+                                            <td>Computer</td>
+                                            <td>P.E.</td>
+                                            <td>Art</td>
+                                            <td>P.E.</td>
+                                            <td>Computer</td>
+                                            <td>P.E.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subjects Info -->
+            <div class="row g-4 mt-5">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4"><i class="bi bi-book-half text-primary me-2"></i>Core Subjects</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary p-2">English</span>
+                                <span class="badge bg-primary p-2">Mathematics</span>
+                                <span class="badge bg-primary p-2">Science</span>
+                                <span class="badge bg-primary p-2">Urdu</span>
+                                <span class="badge bg-primary p-2">Social Studies</span>
+                                <span class="badge bg-primary p-2">Islamiat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4"><i class="bi bi-palette text-primary me-2"></i>Co-Curricular</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-success p-2">Computer Science</span>
+                                <span class="badge bg-success p-2">Physical Education</span>
+                                <span class="badge bg-success p-2">Art & Craft</span>
+                                <span class="badge bg-success p-2">Music</span>
+                                <span class="badge bg-success p-2">Library</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- School Timing -->
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm bg-primary">
+                        <div class="card-body p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center border-end border-white border-opacity-25">
+                                    <i class="bi bi-clock-fill text-white" style="font-size: 3rem;"></i>
+                                    <h5 class="mt-2 mb-0 text-white">School Timing</h5>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row g-3 mt-2 mt-md-0">
+                                        <div class="col-sm-4 text-center">
+                                            <h6 class="mb-1 text-white fw-bold">Pre-Primary</h6>
+                                            <p class="mb-0 text-white">9:00 AM - 12:00 PM</p>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            <h6 class="mb-1 text-white fw-bold">Primary</h6>
+                                            <p class="mb-0 text-white">8:00 AM - 1:00 PM</p>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            <h6 class="mb-1 text-white fw-bold">Secondary</h6>
+                                            <p class="mb-0 text-white">8:00 AM - 2:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Want to Enroll Your Child?</h2>
+                <p>Join BlueLeaf School and give your child the best education</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-light btn-lg">Apply Now</a>
+                    <a href="fees.html" class="btn btn-outline-light btn-lg">View Fees</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <i class="bi bi-tree-fill"></i>
+                                <span>BlueLeaf School</span>
+                            </div>
+                            <p>Nurturing Minds, Shaping Futures. We are committed to providing quality education and holistic development for every student.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="classes.html">Classes</a></li>
+                                <li><a href="fees.html">Fee Structure</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Useful Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="admissions.html">Admissions</a></li>
+                                <li><a href="teachers.html">Our Teachers</a></li>
+                                <li><a href="enrollment.html">Statistics</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Info</h4>
+                            <ul class="footer-contact">
+                                <li><i class="bi bi-geo-alt-fill"></i><span>123 Education Street, Knowledge City, Pakistan</span></li>
+                                <li><i class="bi bi-telephone-fill"></i><span>+92 300 1234567</span></li>
+                                <li><i class="bi bi-envelope-fill"></i><span>info@blueleafschool.edu.pk</span></li>
+                                <li><i class="bi bi-clock-fill"></i><span>Mon - Sat: 8:00 AM - 3:00 PM</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 BlueLeaf School. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Designed with <i class="bi bi-heart-fill text-danger"></i> for Education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - BlueLeaf School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tree-fill"></i>
+                <span>BlueLeaf School</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fees.html">Fees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enrollment.html">Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Photo Gallery</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Explore our campus, events, and activities through pictures</p>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Gallery</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Featured Carousel -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Featured</span>
+                <h2 class="section-title">Highlights of School Life</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div id="featuredCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner rounded-4 shadow-lg">
+                            <div class="carousel-item active">
+                                <img src="https://images.pexels.com/photos/8617841/pexels-photo-8617841.jpeg?auto=compress&cs=tinysrgb&w=1200" class="d-block w-100" alt="School Building" style="height: 500px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Our Beautiful Campus</h5>
+                                    <p>Modern infrastructure for quality education</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/8466585/pexels-photo-8466585.jpeg?auto=compress&cs=tinysrgb&w=1200" class="d-block w-100" alt="Classroom" style="height: 500px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Smart Classrooms</h5>
+                                    <p>Interactive learning environment</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/8617939/pexels-photo-8617939.jpeg?auto=compress&cs=tinysrgb&w=1200" class="d-block w-100" alt="Students" style="height: 500px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Happy Students</h5>
+                                    <p>Learning with joy and enthusiasm</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1200" class="d-block w-100" alt="Activity" style="height: 500px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Extra-Curricular Activities</h5>
+                                    <p>Holistic development through activities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Photo Gallery</span>
+                <h2 class="section-title">Memories & Moments</h2>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/8617841/pexels-photo-8617841.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/8617841/pexels-photo-8617841.jpeg?auto=compress&cs=tinysrgb&w=600" alt="School Building">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">School Building</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Library">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Library</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Computer Lab">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Computer Lab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Science Lab">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Science Lab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sports Ground">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Sports Ground</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/8617939/pexels-photo-8617939.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/8617939/pexels-photo-8617939.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Classroom">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Classroom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/8466585/pexels-photo-8466585.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/8466585/pexels-photo-8466585.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smart Class">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Smart Class</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Activity">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">School Activity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.pexels.com/photos/8617960/pexels-photo-8617960.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <img src="https://images.pexels.com/photos/8617960/pexels-photo-8617960.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Learning">
+                        <div class="gallery-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                            <p class="mt-2 mb-0">Interactive Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 position-absolute end-0 top-0" style="z-index: 1;">
+                    <button type="button" class="btn-close btn-close-white bg-dark rounded-circle p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img id="modalImage" src="" class="img-fluid rounded-4 shadow-lg w-100" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Want to Visit Our Campus?</h2>
+                <p>Schedule a campus tour and experience our facilities firsthand</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
+                    <a href="admissions.html" class="btn btn-outline-light btn-lg">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <i class="bi bi-tree-fill"></i>
+                                <span>BlueLeaf School</span>
+                            </div>
+                            <p>Nurturing Minds, Shaping Futures. We are committed to providing quality education and holistic development for every student.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="classes.html">Classes</a></li>
+                                <li><a href="fees.html">Fee Structure</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Useful Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="admissions.html">Admissions</a></li>
+                                <li><a href="teachers.html">Our Teachers</a></li>
+                                <li><a href="enrollment.html">Statistics</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Info</h4>
+                            <ul class="footer-contact">
+                                <li><i class="bi bi-geo-alt-fill"></i><span>123 Education Street, Knowledge City, Pakistan</span></li>
+                                <li><i class="bi bi-telephone-fill"></i><span>+92 300 1234567</span></li>
+                                <li><i class="bi bi-envelope-fill"></i><span>info@blueleafschool.edu.pk</span></li>
+                                <li><i class="bi bi-clock-fill"></i><span>Mon - Sat: 8:00 AM - 3:00 PM</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 BlueLeaf School. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Designed with <i class="bi bi-heart-fill text-danger"></i> for Education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Gallery Modal Image Handler
+        const galleryModal = document.getElementById('galleryModal');
+        if (galleryModal) {
+            galleryModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const imageUrl = button.getAttribute('data-bs-image');
+                const modalImage = document.getElementById('modalImage');
+                if (modalImage && imageUrl) {
+                    modalImage.src = imageUrl;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
