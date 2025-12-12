@@ -226,7 +226,7 @@ This is a demo/portfolio project showcasing a fictional school website. BlueLeaf
 ---
 
 <p align="center">
-  Made with 💚 by Faheem506pk
+  Made with 💚 by ehzaz437pk
 </p>
 
 <p align="center">
