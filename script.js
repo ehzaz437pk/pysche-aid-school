@@ -1,5 +1,5 @@
 // ====================================
-// BlueLeaf School - JavaScript
+// Psyche Aid Grammar School Padshahan - JavaScript
 // ====================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -274,5 +274,5 @@ document.addEventListener('DOMContentLoaded', function() {
         window.print();
     };
 
-    console.log('BlueLeaf School website loaded successfully!');
+    console.log('Psyche Aid Grammar School Padshahan website loaded successfully!');
 });
